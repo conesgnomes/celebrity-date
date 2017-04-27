@@ -7,8 +7,10 @@ $(function() {
 
     if ((fruit === "pomegranate" && handed === "left") || mornNight === "night") {
     $("#prince").show();
+    $("#gwyneth").hide();
   } else if ((fruit === "apple" && handed === "right") || mornNight === "morning") {
     $("#gwyneth").show();
+    $("#prince").hide();
   }
 
   event.preventDefault();
